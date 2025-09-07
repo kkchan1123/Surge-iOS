@@ -21,14 +21,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 # 请在此处添加您的中国代理服务器
-🇹🇼TW = custom,yeshigeek.com,12345,rc4-md5,password,https://cdn.qingjie.me:443/surge/ss.module
-🇨🇳CN = custom,yeshigeek.com,12345,rc4-md5,password,https://cdn.qingjie.me:443/surge/ss.module
+🇹🇼台湾 = ss, gugu.com, 443, encrypt-method=aes-256-gcm, password=123456
+🇨🇳中国 = ss, gugu.com, 443, encrypt-method=aes-256-gcm, password=123456
+🇺🇸美国 = ss, gugu.com, 443, encrypt-method=aes-256-gcm, password=123456
 
 [Proxy Group]
 # 中国服务 - 用于访问中国网站和服务
-China = select, 🇨🇳CN, DIRECT
+China = select, DIRECT
 # 全球服务 - 用于访问国际网站
-Global = select, DIRECT, 🇹🇼TW
+Global = select, DIRECT
 
 [Rule]
 # 本地网络直连
